@@ -1,0 +1,69 @@
+.accountMain {
+    box-sizing: border-box;
+    display: flex;
+    padding : 20px;
+    flex-wrap: wrap;
+    width: 100%;
+}
+
+.accountAddress {
+    width: 100%;
+    font-size: 20px;
+    margin-bottom: 20px;
+    color:rgb(39, 92, 239);
+}
+
+.accountContract {
+    display: flex;
+    flex-wrap: wrap;
+    width: 100%;
+    margin-bottom: 20px;
+}
+
+.accountContractTitle {
+    font-weight: bold;
+    width: 100%;
+    margin-bottom: 10px;
+    text-align: left;
+}
+
+.accountContractList {
+    background-color: white;
+    border: 1px solid #ddd;
+    width: 100%;
+}
+
+.listItem {
+    cursor: pointer;
+    border-bottom: 1px solid #ddd;
+    display: flex;
+    align-items: center; 
+    padding: 10px 0; 
+    flex-wrap: nowrap; /* Prevent wrapping */
+}
+
+.listItem:last-child {
+    border-bottom: none;
+}
+
+.listItem:hover {
+    transition: background-color 0.3s; /* Adjust transition duration for better effect */
+    background-color: #99daf8;
+}
+
+.listItemValueBorder {
+    padding: 10px;
+    flex-basis: 0; /* Allow to shrink */
+    border-right: 1px solid #ddd;
+    min-width: 250px;
+}
+
+.listItemAddress {
+    min-width: 450px !important; /* Set minimum width */
+    flex-basis: 450px; /* Initial width */
+}
+
+.listItemValue {
+    padding: 10px;
+    flex: 1; /* Allow the value to take remaining space */
+}

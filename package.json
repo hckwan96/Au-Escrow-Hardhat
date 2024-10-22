@@ -4,7 +4,9 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "reset-node": "rm -rf cache artifacts && rm -rf ~/.hardhat && npx hardhat node",
+    "hard-reset-node": "rm -rf cache artifacts deployments && rm -rf ~/.hardhat && npx hardhat node"
   },
   "keywords": [],
   "author": "",
@@ -19,6 +21,7 @@
     "> 5%"
   ],
   "dependencies": {
+    "dotenv": "^16.4.5",
     "ethers": "^5.7.2",
     "react": "^18.2.0"
   }
